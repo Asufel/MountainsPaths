@@ -1,15 +1,15 @@
 import React, { Component, Fragment } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { animateScroll as scroll } from "react-scroll";
-import "./styles/App.sass";
+import "../styles/App.sass";
 
-import Toolbar from "./components/Toolbar/Toolbar";
-import SideDrawer from "./components/SideDrawer/SideDrawer";
-import Backdrop from "./components/Backdrop/Backdrop";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
-import Page from "./components/Page/Page";
-import ArrowUp from "./components/ArrowUp/ArrowUp";
+import Toolbar from "./Toolbar/Toolbar";
+import SideDrawer from "./SideDrawer/SideDrawer";
+import Backdrop from "./Backdrop/Backdrop";
+import Header from "./Header/Header";
+import Footer from "./Footer/Footer";
+import Page from "./Page/Page";
+import ArrowUp from "./ArrowUp/ArrowUp";
 
 class App extends Component {
   state = {
