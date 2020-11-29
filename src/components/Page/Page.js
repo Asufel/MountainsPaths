@@ -9,7 +9,7 @@ const Page = () => {
   return (
     <>
       <Switch>
-        <Route path="/" exact component={HomePage} />
+        <Route path="/mp-project" exact component={HomePage} />
         <Route path="/experience" component={ExperiencePage} />
         <Route path="/contact" component={ContactPage} />
       </Switch>

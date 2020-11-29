@@ -16,7 +16,7 @@ const SideDrawer = (props) => {
   }
 
   const navList = [
-    { name: "About", path: "/", exact: true, close: props.close },
+    { name: "About", path: "/mp-project", exact: true, close: props.close },
     { name: "Experience", path: "/experience", close: props.close },
     { name: "Contact", path: "/contact", close: props.close },
   ];
