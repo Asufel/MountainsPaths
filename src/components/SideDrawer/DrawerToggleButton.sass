@@ -1,0 +1,44 @@
+.toggle__button
+    width: 50px
+    height: 50px
+    position: fixed
+    top: 2.5%
+    right: 2.5%
+    cursor: pointer
+    margin-right: 20px
+    transition: .5s ease-out
+    z-index: 4
+    background-color: rgba(255,255,255,0.5)
+    border-radius: 10px
+    &.black
+        background-color: transparent
+    &.open
+        transform: rotate(-180deg) translateX(-20px)
+        // top: 25px
+        // right: 5px
+    .toggle__button-line
+        position: absolute
+        height: 3px
+        background-color: black
+        width: 60%
+        left: 50%
+        transform: translateX(-50%)
+        transition: .5s ease-out
+        &:nth-of-type(1)
+            top: 30%
+            &.open
+                top: 50%
+                transform: rotate(45deg)
+        &:nth-of-type(2)
+            top: 50%
+            left: 50%
+            transform: translateX(-50%)
+            width: 30%
+            transition: .3s linear
+            &.open
+                width: 0%
+        &:nth-of-type(3)
+            top: 70%
+            &.open
+                top: 50%
+                transform: rotate(-45deg)

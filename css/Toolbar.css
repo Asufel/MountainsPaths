@@ -1,0 +1,135 @@
+.toolbar {
+  position: absolute;
+  height: 100px;
+  top: 0%;
+  width: 90%;
+  left: 5%;
+  margin-top: 25px;
+  -webkit-transition: .7s ease-out;
+  transition: .7s ease-out;
+  border-radius: 40px;
+  z-index: 4;
+}
+
+.toolbar.active {
+  margin-top: 0px;
+  left: 0%;
+  width: 100%;
+  background-color: white;
+  border-radius: 0px;
+  position: fixed;
+}
+
+.toolbar .toolbar__navigation {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.toolbar .toolbar__navigation .spacer {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.toolbar .toolbar__navigation .toolbar__logo {
+  width: 60px;
+  height: 60px;
+}
+
+.toolbar .toolbar__navigation .toolbar__logo.active {
+  position: absolute;
+  top: 20%;
+  left: 2%;
+}
+
+.toolbar .toolbar__navigation .toolbar__logo .logo {
+  line-height: 50px;
+  border-radius: 50%;
+  color: white;
+  font-size: 65px;
+  letter-spacing: 1px;
+  font-weight: 900;
+  -webkit-transition: .5s linear;
+  transition: .5s linear;
+}
+
+.toolbar .toolbar__navigation .toolbar__logo .logo.black {
+  color: black;
+}
+
+.toolbar .toolbar__navigation .toolbar__navigation-items {
+  display: none;
+}
+
+.toolbar .toolbar__navigation .toolbar__navigation-items.hidden {
+  display: none;
+}
+
+.toolbar .toolbar__navigation .toolbar__navigation-items .toolbar__navigation-list {
+  max-width: 500px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 50px;
+}
+
+.toolbar .toolbar__navigation .toolbar__navigation-items .toolbar__navigation-list .toolbar__navigation-listItem {
+  margin: 0 30px;
+}
+
+.toolbar .toolbar__navigation .toolbar__navigation-items .toolbar__navigation-list .toolbar__navigation-listItem .toolbar__navigation-listItem-link {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 15px;
+  font-size: 35px;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  border-radius: 10px;
+}
+
+.toolbar .toolbar__navigation .toolbar__navigation-items .toolbar__navigation-list .toolbar__navigation-listItem .toolbar__navigation-listItem-link:hover::after {
+  width: 60%;
+}
+
+.toolbar .toolbar__navigation .toolbar__navigation-items .toolbar__navigation-list .toolbar__navigation-listItem .toolbar__navigation-listItem-link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 15%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  width: 0%;
+  height: 1px;
+  border-radius: 10px;
+  background-color: white;
+  -webkit-transition: .5s ease-out;
+  transition: .5s ease-out;
+}
+
+.toolbar .toolbar__navigation .toolbar__navigation-items .toolbar__navigation-list .toolbar__navigation-listItem .toolbar__navigation-listItem-link.active {
+  -webkit-box-shadow: 0 0 3px 3px white;
+          box-shadow: 0 0 3px 3px white;
+}
+
+@media (min-width: 1024px) {
+  .toolbar .toolbar__navigation .toolbar__navigation-items {
+    display: block;
+  }
+}
+/*# sourceMappingURL=Toolbar.css.map */

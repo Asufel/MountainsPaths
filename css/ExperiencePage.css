@@ -1,0 +1,30 @@
+.experience {
+  padding: 5vh 0;
+}
+
+.experience .swiper-container {
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  margin: 50px auto;
+  -webkit-transition: .5s linear;
+  transition: .5s linear;
+}
+
+.experience .swiper-container .swiper-slide {
+  height: 100%;
+  width: 100%;
+  -webkit-box-shadow: 1px 1px 3px 2px gray;
+          box-shadow: 1px 1px 3px 2px gray;
+}
+
+.experience .swiper-container .swiper-slide img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+}
+/*# sourceMappingURL=ExperiencePage.css.map */

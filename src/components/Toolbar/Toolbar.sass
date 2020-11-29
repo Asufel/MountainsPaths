@@ -1,0 +1,87 @@
+.toolbar
+  position: absolute
+  height: 100px
+  top: 0%
+  width: 90%
+  left: 5%
+  margin-top: 25px
+  transition: .7s ease-out
+  border-radius: 40px
+  z-index: 4
+  &.active
+    margin-top: 0px
+    left: 0%
+    width: 100%
+    background-color: white
+    border-radius: 0px
+    position: fixed
+  .toolbar__navigation
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .spacer
+      flex-grow: 1
+    .toolbar__logo
+      width: 60px
+      height: 60px
+      &.active
+        position: absolute
+        top: 20%
+        left: 2%
+      .logo
+        line-height: 50px
+        border-radius: 50%
+        color: white
+        font-size: 65px
+        letter-spacing: 1px
+        font-weight: 900
+        transition: .5s linear
+        &.black
+          color: black
+    .toolbar__navigation-items
+      display: none
+      &.hidden
+        display: none
+      .toolbar__navigation-list
+        max-width: 500px
+        list-style: none
+        display: flex
+        justify-content: flex-end
+        margin-right: 50px
+        .toolbar__navigation-listItem
+          margin: 0 30px
+          .toolbar__navigation-listItem-link
+            display: block
+            height: 50px
+            line-height: 50px
+            padding: 0 15px
+            font-size: 35px
+            text-decoration: none
+            color: white
+            position: relative
+            border-radius: 10px
+            &:hover::after
+              width: 60%
+            &::after
+              content: ""
+              display: block
+              position: absolute
+              bottom: 15%
+              transform: translateX(-50%)
+              left: 50%
+              width: 0%
+              height: 1px
+              border-radius: 10px
+              background-color: white
+              transition: .5s ease-out
+            &.active
+              box-shadow: 0 0 3px 3px white
+
+@media (min-width:1024px)
+
+  .toolbar
+    .toolbar__navigation
+      .toolbar__navigation-items
+        display: block

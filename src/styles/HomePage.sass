@@ -1,0 +1,244 @@
+$base-bgColor : white
+$baseDark-bgColor: #2e2d2c  
+.home
+    background-color: white
+    display: flex
+    justify-content: space-around
+    align-items: flex-start
+    flex-wrap: wrap
+    background-color: $base-bgColor
+    .home__intro,.home__story
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+        padding: 100px 10px 10vh 10px
+        min-height: 100vh
+        .home__intro-desc
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-around
+            padding-top: 50px
+            flex-basis: 100%
+            align-items: center
+            transform: translateY(50px)
+            .home__intro-desc-text
+                margin-bottom: 60px
+                padding: 0 10px
+                max-width: 500px
+                text-align-last: right
+                .spacer
+                    height: 40px
+                    width: 100%
+                    display: block
+                p
+                    line-height: 24px
+                    font-size: 20px
+                    letter-spacing: 0.5px
+                    color: $baseDark-bgColor
+            .home__intro-desc-photo
+                width: 100%
+                max-width: 500px
+                height: 250px
+                img
+                    width: 100%
+                    height: 100%
+                    display: block
+                    object-fit: cover
+                    -o-object-fit: cover
+                    object-position: 50% 50%
+                    -o-object-position: 50% 50%
+                    box-shadow: 1px 2px 3px 1px gray
+        .home__intro-title
+            margin: 20px 0
+            max-width: 500px
+            color: $baseDark-bgColor
+            h1
+                font-size: 28px
+                text-align: center
+                font-family: 'Cormorant', serif
+                text-align-last: right
+            h6
+                font-size: 20px
+                margin-bottom: 15px
+        .home__intro-photo
+            flex-basis: 100%
+            height: 250px
+            max-width: 600px
+            margin-bottom: 20px
+            img
+                width: 100%
+                height: 100%
+                display: block
+                object-fit: cover
+                -o-object-fit: cover
+                object-position: 50% 50%
+                -o-object-position: 50% 50%
+                box-shadow: 1px 2px 3px 1px gray
+    .home__about
+        min-height: 100vh
+        background-color: #3c3d41
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+        align-items: space-around
+        width: 100vw
+        border-top: 2px $base-bgColor dotted
+        padding: 10vh 0
+        background-attachment: fixed
+        background-size: cover
+        background-position: center
+        .home__head
+            flex-basis: 100%
+            text-align: center
+            font-size: 40px
+            margin-bottom: 100px
+            margin-top: 25px
+            display: flex
+            flex-direction: column
+            align-items: center
+            color: $base-bgColor
+            *
+                max-width: 700px
+            .home__head-subTitle
+                font-size: 18px
+            .home__head-title
+                font-size: 35px
+            .home__head-description
+                font-size: 25px
+        .home__product
+            width: 100%
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            align-items: flex-start
+            margin: 50px 0
+            max-width: 400px
+            margin: 10px
+            background-color: $base-bgColor
+            border-radius: 0 0 5px 5px
+            .home__product-img
+                width: 100%
+                height: 250px
+                max-width: 500px
+                img
+                    display: block
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+                    -o-object-fit: cover
+                    object-position: 50% 50%
+                    -o-object-position: 50% 50%
+            .home__product-desc
+                width: 100%
+                text-align: center
+                padding: 30px 0
+                color: $baseDark-bgColor
+                h6
+                    // color: white
+                h1
+                    // color: white
+                a
+                    text-decoration: none
+                    // color: white
+    .home__story
+        .spacer
+            height: 40px
+            width: 100%
+            display: block
+        .home__story-intro
+            margin: 60px 0
+            width: 100%
+            .home__story-head
+                text-align: center
+                font-size: 75px
+                margin-bottom: 20px
+            h5
+                flex-basis: 100%
+                color: grey
+                font-size: 25px
+                letter-spacing: 0.5px
+                text-align: center
+                margin: 25px auto
+                max-width: 750px
+            p
+                max-width: 800px
+                margin: 0 auto
+                line-height: 24px
+                font-size: 20px
+                letter-spacing: 0.5px
+                color: $baseDark-bgColor
+                text-align-last: right
+                text-align: center
+        .home__story-row
+            flex-basis: 100%
+            margin: 10px 0
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-around
+            align-items: center
+            padding: 50px 0
+            .home__story-picture
+                width: 90%
+                max-width: 600px
+                height: 250px
+                margin-bottom: 20px
+                img
+                    display: block
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+                    -o-obcjet-fit: cover
+                    object-position: 50% 50%
+                    -o-object-position: 50% 50%
+                    box-shadow: 1px 1px 3px 2px gray
+            .home__story-text
+                max-width: 500px
+                margin: 20px 0
+                h1
+                    font-size: 25px
+                    text-align: center
+                    font-family: 'Cormorant', serif
+                p
+                    font-size: 18px
+                    text-align: center
+                    letter-spacing: 1px
+
+@media (min-width: 1023px)
+    .home
+        .home__intro
+            .home__intro-desc
+                align-items: flex-start
+                .home__intro-desc-text
+                    flex-basis: 50%
+                .home__intro-desc-photo
+                    height: 400px
+            .home__intro-photo
+                height: 300px
+        .home__about
+            .home__product
+                .home__product-img
+                    height: 450px
+        .home__story
+            .home__story-intro
+                .home__story-head
+                    font-size: 65px
+                h5
+                    font-size: 35px
+            .home__story-row
+                padding: 25px 0
+                margin: 80px 0
+                &:nth-of-type(2) .home__story-picture
+                    height: 350px
+                &:nth-of-type(3) .home__story-picture
+                    order: 2
+                    height: 600px
+                &:nth-of-type(3) .home__story-text
+                    order: 1
+
+@media (max-width: 1023px) and (orientation:landscape)
+    .home
+        .home__intro
+            .home__intro-desc
+                .home__intro-desc-text
+            .home__intro-photo
+                flex-basis: 80%

@@ -1,0 +1,67 @@
+.contact__info
+    // border: 1px solid black
+    flex-basis: 100%
+    max-width: 1000px
+    display: flex
+    flex-wrap: wrap
+    background-color: gray
+    border-radius: 5px
+    justify-content: space-around
+    align-items: center
+    .info__map
+        height: 300px
+        margin: 20px auto
+        max-width: 500px
+        img
+            display: block
+            height: 100%
+            width: 100%
+            object-fit: cover
+            object-position: 50% 50%
+            -o-object-fit: cover
+            -o-object-position: 50% 50%
+            border-radius: 5px
+            box-shadow: 1px 1px 3px 2px gray
+            &:hover ~ .infoList-item:nth-of-type(2)
+                font-size: 25px
+    .info__details
+        margin: 20px 0
+        .infoList
+            list-style: none
+            min-height: 400px
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            max-width: 320px
+            .infoList-item
+                flex-basis: 100%
+                text-align: center
+                font-size: 22px
+                &:nth-of-type(1)
+                    margin: 15px 0
+                h1
+                    margin: 15px 0
+                    font-size: 38px
+                    position: relative
+                    &::after
+                        content: ''
+                        position: absolute
+                        height: 0.1px
+                        width: 30%
+                        transform: translate(-50%,-50%)
+                        left: 50%
+                        bottom: 10%
+                        background-color: black
+                i
+                    margin-right: 15px
+                    color: black
+                a
+                    font-size: 30px
+                    text-decoration: none
+                    color: black
+
+@media (min-width:1811px)
+    .contact__info
+        .info__map
+            height: 100%
+            width: 50%

@@ -1,26 +1,86 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component, Fragment } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import { animateScroll as scroll } from "react-scroll";
+import "./styles/App.sass";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Toolbar from "./components/Toolbar/Toolbar";
+import SideDrawer from "./components/SideDrawer/SideDrawer";
+import Backdrop from "./components/Backdrop/Backdrop";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import Page from "./components/Page/Page";
+import ArrowUp from "./components/ArrowUp/ArrowUp";
+
+class App extends Component {
+  state = {
+    sideDrawerOpen: false,
+    arrowUp: false,
+    headerHeight: 0,
+    burgerColor: true,
+  };
+
+  drawerToggleClickHandler = () => {
+    this.setState((prevState) => {
+      return { sideDrawerOpen: !prevState.sideDrawerOpen };
+    });
+  };
+
+  closeNav = () => {
+    setTimeout(() => {
+      this.setState({ sideDrawerOpen: false });
+    }, 500);
+  };
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+    // window.addEventListener("scroll", this.scrollToTop);
+    if (this.state.sideDrawerOpen) {
+      document.body.style.overflow = "hidden";
+    }
+  }
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+    // window.removeEventListener("scroll", this.scrollToTop);
+  }
+  handleScroll = (e) => {
+    const headerHeight = document.querySelector(".header").offsetHeight;
+    this.setState({ headerHeight: headerHeight });
+
+    if (window.scrollY > this.state.headerHeight) {
+      this.setState({ burgerColor: true });
+    } else if (window.scrollY < this.state.headerHeight) {
+      this.setState({ burgerColor: false });
+    }
+
+    if (window.scrollY >= 1000) {
+      this.setState({ arrowUp: true });
+    } else if (window.scrollY <= 1000) {
+      this.setState({ arrowUp: false });
+    }
+  };
+  scrollTo = () => {
+    scroll.scrollTo(0);
+    console.log("you can do it");
+  };
+  render() {
+    return (
+      <Router>
+        <div className="app" style={{ height: "100%" }}>
+          <Toolbar
+            open={this.state.sideDrawerOpen}
+            color={this.state.burgerColor}
+            drawerToggleHandler={this.drawerToggleClickHandler}
+          />
+          <SideDrawer show={this.state.sideDrawerOpen} close={this.closeNav} />
+          <Header />
+          <main>
+            <ArrowUp open={this.state.arrowUp} scroll={this.scrollTo} />
+            <Page />
+          </main>
+          <Footer />
+        </div>
+      </Router>
+    );
+  }
 }
 
 export default App;
