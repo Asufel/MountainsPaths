@@ -32,14 +32,12 @@ class App extends Component {
   };
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
-    // window.addEventListener("scroll", this.scrollToTop);
     if (this.state.sideDrawerOpen) {
       document.body.style.overflow = "hidden";
     }
   }
   componentWillUnmount() {
     window.removeEventListener("scroll", this.handleScroll);
-    // window.removeEventListener("scroll", this.scrollToTop);
   }
   handleScroll = (e) => {
     const headerHeight = document.querySelector(".header").offsetHeight;
@@ -59,7 +57,6 @@ class App extends Component {
   };
   scrollTo = () => {
     scroll.scrollTo(0);
-    console.log("you can do it");
   };
   render() {
     return (
