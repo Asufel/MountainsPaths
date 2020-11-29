@@ -5,7 +5,6 @@ import "../styles/App.sass";
 
 import Toolbar from "./Toolbar/Toolbar";
 import SideDrawer from "./SideDrawer/SideDrawer";
-import Backdrop from "./Backdrop/Backdrop";
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 import Page from "./Page/Page";
