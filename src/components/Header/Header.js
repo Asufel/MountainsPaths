@@ -8,7 +8,7 @@ const Header = () => {
   const baseDarkColor = "#2e2d2c";
   const header_tab = [
     {
-      path: "/mp-project",
+      path: "/",
       img: img,
       height: 120,
       color: baseBrightColor,
