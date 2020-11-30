@@ -1,5 +1,5 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
 import "./Header.sass";
 import img from "../../images/pexels-flo-maderebner-869258.jpg";
 import Particles from "react-particles-js";
@@ -163,7 +163,11 @@ const Header = () => {
       )}
     />
   ));
-  return <>{head_rout}</>;
+  return (
+    <>
+      <HashRouter basename="/">{head_rout}</HashRouter>
+    </>
+  );
 };
 
 export default Header;
