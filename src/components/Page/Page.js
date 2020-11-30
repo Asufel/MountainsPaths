@@ -8,13 +8,17 @@ import ContactPage from "../../pages/ContactPage";
 const Page = () => {
   return (
     <>
-      <HashRouter basename="/">
-        <Switch>
-          <Route path="/" exact component={HomePage} />
-          <Route path="/experience" component={ExperiencePage} />
-          <Route path="/contact" component={ContactPage} />
-        </Switch>
-      </HashRouter>
+      <Switch>
+        <Route path={`${process.env.PUBLIC_URL}/`} exact component={HomePage} />
+        <Route
+          path={`${process.env.PUBLIC_URL}/experience`}
+          component={ExperiencePage}
+        />
+        <Route
+          path={`${process.env.PUBLIC_URL}/contact`}
+          component={ContactPage}
+        />
+      </Switch>
     </>
   );
 };

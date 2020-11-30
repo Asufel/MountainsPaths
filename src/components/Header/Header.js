@@ -31,7 +31,7 @@ const Header = () => {
   ];
   const head_rout = header_tab.map((item) => (
     <Route
-      path={item.path}
+      path={`${process.env.PUBLIC_URL}${item.path}`}
       exact
       render={() => (
         <header className="header" style={{ height: `${item.height}vh` }}>
@@ -163,11 +163,7 @@ const Header = () => {
       )}
     />
   ));
-  return (
-    <>
-      <HashRouter basename="/">{head_rout}</HashRouter>
-    </>
-  );
+  return <>{head_rout}</>;
 };
 
 export default Header;
