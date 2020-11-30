@@ -39,15 +39,6 @@ class App extends Component {
     window.removeEventListener("scroll", this.handleScroll);
   }
   handleScroll = (e) => {
-    const headerHeight = document.querySelector(".header").offsetHeight;
-    this.setState({ headerHeight: headerHeight });
-
-    if (window.scrollY > this.state.headerHeight) {
-      this.setState({ burgerColor: true });
-    } else if (window.scrollY < this.state.headerHeight) {
-      this.setState({ burgerColor: false });
-    }
-
     if (window.scrollY >= 1000) {
       this.setState({ arrowUp: true });
     } else if (window.scrollY <= 1000) {
@@ -63,7 +54,6 @@ class App extends Component {
         <div className="app" style={{ height: "100%" }}>
           <Toolbar
             open={this.state.sideDrawerOpen}
-            color={this.state.burgerColor}
             drawerToggleHandler={this.drawerToggleClickHandler}
           />
           <SideDrawer show={this.state.sideDrawerOpen} close={this.closeNav} />
@@ -72,7 +62,7 @@ class App extends Component {
             <ArrowUp open={this.state.arrowUp} scroll={this.scrollTo} />
             <Page />
           </main>
-          <Footer />
+          <Footer scroll={this.scrollTo} />
         </div>
       </Router>
     );

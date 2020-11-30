@@ -2,7 +2,8 @@ import React from "react";
 import "./Footer.sass";
 import Logo from "../Logo/Logo";
 import Particles from "react-particles-js";
-const Footer = () => {
+import { animateScroll as scroll } from "react-scroll";
+const Footer = (props) => {
   const footer_social_links = [
     {
       path: "https://www.facebook.com",
@@ -29,7 +30,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer__logo">
         <div className="footer__logoHolder">
-          <Logo />
+          <Logo scroll={props.scroll} />
         </div>
       </div>
       <ul className="footer__socials">{footer_link}</ul>

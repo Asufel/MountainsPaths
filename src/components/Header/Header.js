@@ -155,9 +155,6 @@ const Header = () => {
           </div>
           <div className="header__head">
             <h1 className="header__head-title">Mountains Paths</h1>
-            <a href="/" className="header__head-btn">
-              read more
-            </a>
           </div>
         </header>
       )}

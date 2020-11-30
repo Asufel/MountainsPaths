@@ -10,25 +10,27 @@ const ContactInfo = () => {
       </div>
 
       <div className="info__details">
-        <ul className="infoList">
-          <li className="infoList-item">
-            <h1>Contact Informations</h1>
-          </li>
+        <h1 className="details__head">Contact Informations</h1>
 
-          <li className="infoList-item">
-            <a href="mailto:'mountainspaths@gmail.com'">
-              <i class="far fa-envelope"></i>mountainspaths@gmail.com
-            </a>
-          </li>
+        <div className="details__row">
+          <a href="mailtto: 'mp.travelers@gmail.com'" className="row__link">
+            mp.travelers@gmail.com<i class="far fa-envelope"></i>
+          </a>
+        </div>
 
-          <li className="infoList-item">
+        <div className="details__row">
+          <p className="row__link">
+            +1 343 91860<i class="fas fa-mobile"></i>
+          </p>
+        </div>
+
+        <div className="details__row">
+          <p className="row__link">
             {" "}
-            <i class="fas fa-map-marker"></i>St Marks Ave 41 Brooklyn <br /> NY
-          </li>
-          <li className="infoList-item">
-            <i class="fas fa-mobile"></i> +1 643 82 81
-          </li>
-        </ul>
+            63 St Mark Street,
+            <br /> New York<i class="fas fa-map-marker"></i>
+          </p>
+        </div>
       </div>
     </div>
   );

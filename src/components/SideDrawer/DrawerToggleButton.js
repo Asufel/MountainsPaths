@@ -9,12 +9,6 @@ const drawerToggleButton = (props) => {
     lines = "toggle__button-line open";
     burger = "toggle__button open";
   }
-  if (props.color) {
-    burger = "toggle__button black";
-  }
-  if (props.open && props.color) {
-    burger = "toggle__button  open black";
-  }
 
   return (
     <div className={burger} onClick={props.click}>

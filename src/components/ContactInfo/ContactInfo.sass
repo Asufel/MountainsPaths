@@ -1,5 +1,4 @@
 .contact__info
-    // border: 1px solid black
     flex-basis: 100%
     max-width: 1000px
     display: flex
@@ -8,6 +7,8 @@
     border-radius: 5px
     justify-content: space-around
     align-items: center
+    margin-top: 50px
+    padding: 40px 0
     .info__map
         height: 300px
         margin: 20px auto
@@ -26,42 +27,50 @@
                 font-size: 25px
     .info__details
         margin: 20px 0
-        .infoList
-            list-style: none
-            min-height: 400px
-            display: flex
-            flex-wrap: wrap
-            align-items: center
-            max-width: 320px
-            .infoList-item
-                flex-basis: 100%
-                text-align: center
-                font-size: 22px
-                &:nth-of-type(1)
-                    margin: 15px 0
-                h1
-                    margin: 15px 0
-                    font-size: 38px
-                    position: relative
-                    &::after
-                        content: ''
-                        position: absolute
-                        height: 0.1px
-                        width: 30%
-                        transform: translate(-50%,-50%)
-                        left: 50%
-                        bottom: 10%
-                        background-color: black
+        min-width: 320px
+        width: 100%
+        max-width: 500px
+        .details__head
+            text-align: center
+            font-size: 35px
+            margin-bottom: 20px
+            font-family: Italianno, sans-serif
+        .details__row
+            margin: 20px 0
+            font-family: Roboto, sans-serif
+            .row__link
+                display: block
+                padding-right: 20px
+                font-size: 24px
+                text-align: right
+                text-decoration: none
+                color: black
+                position: relative
                 i
-                    margin-right: 15px
-                    color: black
-                a
-                    font-size: 30px
-                    text-decoration: none
-                    color: black
+                    position: absolute
+                    left: 5%
 
 @media (min-width:1811px)
     .contact__info
         .info__map
             height: 100%
             width: 50%
+
+@media (min-width: 1024px)
+
+    .contact__info
+        .info__details
+            .details__row
+                .row__link
+                    display: block
+                    padding-right: 20px
+                    font-size: 24px
+                    text-align: right
+                    text-decoration: none
+                    color: black
+                    position: relative
+                    i
+                        position: absolute
+                        left: 5%
+                    &:hover
+                        color: white

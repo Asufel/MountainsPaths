@@ -1,18 +1,17 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./SideDrawer.sass";
-import img from "../../images/pexels-flo-maderebner-869258.jpg";
 
 const SideDrawer = (props) => {
-  let drawerClasses = "side-drawer";
-  let menuPhoto = "side-drawer-imageHolder";
-  let listItem = "side-drawer-listItem";
-  let list = "side-drawer-list";
+  let menuClasses = "menu";
+  let listItem = "menu__list-listItem";
+  let list = "menu__list";
+  let socials = "socialIcons__icon";
   if (props.show) {
-    drawerClasses = "side-drawer open";
-    menuPhoto = "side-drawer-imageHolder visible";
-    listItem = "side-drawer-listItem visible";
-    list = "side-drawer-list visible";
+    menuClasses = "menu open";
+    listItem = "menu__list-listItem visible";
+    list = "menu__list visible";
+    socials = "socialIcons__icon visible";
   }
 
   const navList = [
@@ -27,18 +26,32 @@ const SideDrawer = (props) => {
         onClick={item.close}
         exact={item.exact ? item.exact : false}
       >
-        {item.name}
+        {item.name} <span></span>
       </NavLink>
     </li>
   ));
 
+  const menu_social_links = [
+    {
+      path: "https://www.facebook.com",
+      classes: "fab fa-facebook",
+    },
+    {
+      path: "https://www.instagram.com",
+      classes: "fab fa-instagram",
+    },
+  ];
+
+  const menu_links = menu_social_links.map((item) => (
+    <a href={item.path} className={socials}>
+      <i className={item.classes}></i>
+    </a>
+  ));
+
   return (
-    <nav className={drawerClasses}>
+    <nav className={menuClasses}>
       <ul className={list}>{links}</ul>
-      <div
-        className={menuPhoto}
-        style={{ backgroundImage: `url(${img})` }}
-      ></div>
+      <div className="menu__socialIcons">{menu_links}</div>
     </nav>
   );
 };

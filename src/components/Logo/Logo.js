@@ -7,7 +7,11 @@ const Logo = (props) => {
     Aclass = "logo black";
   }
   return (
-    <NavLink className={Aclass} to="/">
+    <NavLink
+      className={Aclass}
+      to={`${process.env.PUBLIC_URL}/`}
+      onClick={props.scroll}
+    >
       MP
     </NavLink>
   );
