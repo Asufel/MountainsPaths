@@ -1,35 +1,43 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "760ce707972b8307197967452b583801",
+    "revision": "73fd627ab3839eb361c942641ae3b482",
     "url": "/MountainsPaths/index.html"
   },
   {
-    "revision": "62987267c81bebc017c8",
+    "revision": "8591f56294da4a52671a",
     "url": "/MountainsPaths/static/css/2.d436d498.chunk.css"
   },
   {
-    "revision": "39f9916c33758c04ad27",
+    "revision": "1fa5df616369e120e99e",
     "url": "/MountainsPaths/static/css/main.c41f3bba.chunk.css"
   },
   {
-    "revision": "62987267c81bebc017c8",
-    "url": "/MountainsPaths/static/js/2.98704e49.chunk.js"
+    "revision": "8591f56294da4a52671a",
+    "url": "/MountainsPaths/static/js/2.59353ab7.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/MountainsPaths/static/js/2.98704e49.chunk.js.LICENSE.txt"
+    "url": "/MountainsPaths/static/js/2.59353ab7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "39f9916c33758c04ad27",
-    "url": "/MountainsPaths/static/js/main.e9fa00e0.chunk.js"
+    "revision": "1fa5df616369e120e99e",
+    "url": "/MountainsPaths/static/js/main.d8b54e69.chunk.js"
   },
   {
     "revision": "213cb71f6cd6a8df7023",
     "url": "/MountainsPaths/static/js/runtime-main.afabd240.js"
   },
   {
+    "revision": "b304ec02c28025ec10768cb703002c19",
+    "url": "/MountainsPaths/static/media/ama-dablam-2064522_1920.b304ec02.jpg"
+  },
+  {
     "revision": "c046d27142b18b3f3990d773d251ac7c",
     "url": "/MountainsPaths/static/media/bled-1899264_1920.c046d271.jpg"
+  },
+  {
+    "revision": "0f8f1d1eb1625f23484b9ed613b1ea23",
+    "url": "/MountainsPaths/static/media/boat-4899802_1920.0f8f1d1e.jpg"
   },
   {
     "revision": "998596e58a233a8caec826d434b54e38",
@@ -58,5 +66,13 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "daf6d38d53f3e28eb159ee0943b41983",
     "url": "/MountainsPaths/static/media/pexels-suliman-sallehi-1822458.daf6d38d.jpg"
+  },
+  {
+    "revision": "8f42d0d6bcaa618c38e430f10df0f49f",
+    "url": "/MountainsPaths/static/media/schilthorn-3033448_1920.8f42d0d6.jpg"
+  },
+  {
+    "revision": "2c1f109b872e093c85f47a41d5d19ba9",
+    "url": "/MountainsPaths/static/media/yellowstone-national-park-1581879_1920.2c1f109b.jpg"
   }
 ]);
