@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/mp-project/static/css/main.e7620815.chunk.css",
-    "main.js": "/mp-project/static/js/main.80a3fd76.chunk.js",
-    "main.js.map": "/mp-project/static/js/main.80a3fd76.chunk.js.map",
+    "main.js": "/mp-project/static/js/main.7b9e502a.chunk.js",
+    "main.js.map": "/mp-project/static/js/main.7b9e502a.chunk.js.map",
     "runtime-main.js": "/mp-project/static/js/runtime-main.1985631d.js",
     "runtime-main.js.map": "/mp-project/static/js/runtime-main.1985631d.js.map",
     "static/css/2.d436d498.chunk.css": "/mp-project/static/css/2.d436d498.chunk.css",
-    "static/js/2.8b90b0e7.chunk.js": "/mp-project/static/js/2.8b90b0e7.chunk.js",
-    "static/js/2.8b90b0e7.chunk.js.map": "/mp-project/static/js/2.8b90b0e7.chunk.js.map",
+    "static/js/2.40b071e4.chunk.js": "/mp-project/static/js/2.40b071e4.chunk.js",
+    "static/js/2.40b071e4.chunk.js.map": "/mp-project/static/js/2.40b071e4.chunk.js.map",
     "index.html": "/mp-project/index.html",
-    "precache-manifest.1225b5028d3369f3a1c8d92686a59166.js": "/mp-project/precache-manifest.1225b5028d3369f3a1c8d92686a59166.js",
+    "precache-manifest.2e6db175088ca809acd73ed7772f5161.js": "/mp-project/precache-manifest.2e6db175088ca809acd73ed7772f5161.js",
     "service-worker.js": "/mp-project/service-worker.js",
     "static/css/2.d436d498.chunk.css.map": "/mp-project/static/css/2.d436d498.chunk.css.map",
     "static/css/main.e7620815.chunk.css.map": "/mp-project/static/css/main.e7620815.chunk.css.map",
-    "static/js/2.8b90b0e7.chunk.js.LICENSE.txt": "/mp-project/static/js/2.8b90b0e7.chunk.js.LICENSE.txt",
+    "static/js/2.40b071e4.chunk.js.LICENSE.txt": "/mp-project/static/js/2.40b071e4.chunk.js.LICENSE.txt",
     "static/media/bled-1899264_1920.jpg": "/mp-project/static/media/bled-1899264_1920.c046d271.jpg",
     "static/media/dolomites-2897227_640.jpg": "/mp-project/static/media/dolomites-2897227_640.998596e5.jpg",
     "static/media/mountain-climbing-802099_1920.jpg": "/mp-project/static/media/mountain-climbing-802099_1920.0194503e.jpg",
@@ -26,8 +26,8 @@
   "entrypoints": [
     "static/js/runtime-main.1985631d.js",
     "static/css/2.d436d498.chunk.css",
-    "static/js/2.8b90b0e7.chunk.js",
+    "static/js/2.40b071e4.chunk.js",
     "static/css/main.e7620815.chunk.css",
-    "static/js/main.80a3fd76.chunk.js"
+    "static/js/main.7b9e502a.chunk.js"
   ]
 }
