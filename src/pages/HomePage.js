@@ -1,11 +1,12 @@
 import React, { Fragment, useEffect } from "react";
 import "../styles/HomePage.sass";
-import Typical from "react-typical";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import img1 from "../images/bled-1899264_1920.jpg";
-import img2 from "../images/mountain-climbing-802099_1920.jpg";
-import img3 from "../images/mountaineering-2124113_1920.jpg";
+import img1 from "../images/ama-dablam-2064522_1920.jpg";
+import img2 from "../images/yellowstone-national-park-1581879_1920.jpg";
+import img3 from "../images/boat-4899802_1920.jpg";
+import img4 from "../images/schilthorn-3033448_1920.jpg";
+import img5 from "../images/bled-1899264_1920.jpg";
 
 const HomePage = () => {
   useEffect(() => {
@@ -22,7 +23,7 @@ const HomePage = () => {
       aosTime: "2000",
     },
     {
-      picture: img3,
+      picture: img4,
       text1:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi culpa dolores aperiam? Consequuntur, rem alias.",
       text2:
@@ -31,7 +32,7 @@ const HomePage = () => {
       aosTime: "1000",
     },
     {
-      picture: img3,
+      picture: img5,
       text1:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi culpa dolores aperiam? Consequuntur, rem alias.",
       text2:
