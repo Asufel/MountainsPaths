@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,QAAQ,CAAC;EAEL,OAAO,EAAE,MAAM;EACf,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,IAAI;EACf,eAAe,EAAE,YAAY;CAAG",
-    "sources": [
-        "../src/styles/ContactPage.sass"
-    ],
-    "names": [],
-    "file": "ContactPage.css"
-}

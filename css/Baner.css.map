@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,eAAe,CAAC;EACZ,gBAAgB,EAAE,GAAG;EACrB,MAAM,EAAE,KAAK;CAAG",
-    "sources": [
-        "../src/components/Baner/Baner.sass"
-    ],
-    "names": [],
-    "file": "Baner.css"
-}
