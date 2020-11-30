@@ -14,7 +14,7 @@ const navList = [
 const links = navList.map((item) => (
   <li key={item.name} className="toolbar__navigation-listItem">
     <NavLink
-      to={item.path}
+      to={`${process.env.PUBLIC_URL}${item.path}`}
       className="toolbar__navigation-listItem-link"
       exact={item.exact ? item.exact : false}
     >

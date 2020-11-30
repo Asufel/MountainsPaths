@@ -23,7 +23,7 @@ const SideDrawer = (props) => {
   const links = navList.map((item) => (
     <li key={item.name} className={listItem}>
       <NavLink
-        to={item.path}
+        to={`${process.env.PUBLIC_URL}${item.path}`}
         onClick={item.close}
         exact={item.exact ? item.exact : false}
       >
