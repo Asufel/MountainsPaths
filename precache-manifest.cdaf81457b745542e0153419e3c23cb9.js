@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8e80a1693990013e641104c1ba1c542c",
+    "revision": "fb1197f24b950951f140c6b9ea33de20",
     "url": "/MountainsPaths/index.html"
   },
   {
-    "revision": "8591f56294da4a52671a",
+    "revision": "e84e13052e25b4d2f036",
     "url": "/MountainsPaths/static/css/2.d436d498.chunk.css"
   },
   {
-    "revision": "1fa5df616369e120e99e",
-    "url": "/MountainsPaths/static/css/main.c41f3bba.chunk.css"
+    "revision": "c80ad13208f9c0409dd3",
+    "url": "/MountainsPaths/static/css/main.01807adb.chunk.css"
   },
   {
-    "revision": "8591f56294da4a52671a",
-    "url": "/MountainsPaths/static/js/2.59353ab7.chunk.js"
+    "revision": "e84e13052e25b4d2f036",
+    "url": "/MountainsPaths/static/js/2.6613415e.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/MountainsPaths/static/js/2.59353ab7.chunk.js.LICENSE.txt"
+    "url": "/MountainsPaths/static/js/2.6613415e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1fa5df616369e120e99e",
-    "url": "/MountainsPaths/static/js/main.d8b54e69.chunk.js"
+    "revision": "c80ad13208f9c0409dd3",
+    "url": "/MountainsPaths/static/js/main.abb1adeb.chunk.js"
   },
   {
     "revision": "213cb71f6cd6a8df7023",
@@ -52,10 +52,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MountainsPaths/static/media/mountaineering-2124113_1920.073aff41.jpg"
   },
   {
-    "revision": "b4f93855ea8a2c0e9f9746344c43dc6c",
-    "url": "/MountainsPaths/static/media/pexels-andrea-piacquadio-774909.b4f93855.jpg"
-  },
-  {
     "revision": "0de35442dc04e6ace429708a51f28dfd",
     "url": "/MountainsPaths/static/media/pexels-flo-maderebner-869258.0de35442.jpg"
   },
@@ -70,6 +66,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8f42d0d6bcaa618c38e430f10df0f49f",
     "url": "/MountainsPaths/static/media/schilthorn-3033448_1920.8f42d0d6.jpg"
+  },
+  {
+    "revision": "c355197b4f811188a627f8abbe3d8ddc",
+    "url": "/MountainsPaths/static/media/wintry-2068298_1920.c355197b.jpg"
   },
   {
     "revision": "2c1f109b872e093c85f47a41d5d19ba9",

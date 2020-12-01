@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/MountainsPaths/precache-manifest.812e6a036de80171c7b8d777072c170f.js"
+  "/MountainsPaths/precache-manifest.cdaf81457b745542e0153419e3c23cb9.js"
 );
 
 self.addEventListener('message', (event) => {
