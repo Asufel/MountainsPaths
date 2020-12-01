@@ -1,10 +1,10 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { animateScroll as scroll } from "react-scroll";
 import "../styles/App.sass";
 
 import Toolbar from "./Toolbar/Toolbar";
-import SideDrawer from "./SideDrawer/SideDrawer";
+import Menu from "./Menu/Menu";
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 import Page from "./Page/Page";
@@ -56,7 +56,11 @@ class App extends Component {
             open={this.state.sideDrawerOpen}
             drawerToggleHandler={this.drawerToggleClickHandler}
           />
-          <SideDrawer show={this.state.sideDrawerOpen} close={this.closeNav} />
+          <Menu
+            show={this.state.sideDrawerOpen}
+            scroll={this.scrollTo}
+            close={this.closeNav}
+          />
           <Header />
           <main>
             <ArrowUp open={this.state.arrowUp} scroll={this.scrollTo} />

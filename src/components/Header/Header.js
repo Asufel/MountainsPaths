@@ -1,7 +1,9 @@
 import React from "react";
-import { HashRouter, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import "./Header.sass";
 import img from "../../images/pexels-flo-maderebner-869258.jpg";
+import img2 from "../../images/mountaineering-2124113_1920.jpg";
+import img3 from "../../images/wintry-2068298_1920.jpg";
 import Particles from "react-particles-js";
 const Header = () => {
   const baseBrightColor = "#F5D9A4";
@@ -16,16 +18,16 @@ const Header = () => {
     },
     {
       path: "/experience",
-      img: img,
+      img: img2,
       height: 120,
       color: baseBrightColor,
       flakes: 140,
     },
     {
       path: "/contact",
-      img: img,
+      img: img3,
       height: 120,
-      color: baseBrightColor,
+      color: baseDarkColor,
       flakes: 80,
     },
   ];
@@ -37,7 +39,7 @@ const Header = () => {
         <header className="header" style={{ height: `${item.height}vh` }}>
           <div
             className="header__picture"
-            style={{ backgroundImage: `url(${img})` }}
+            style={{ backgroundImage: `url(${item.img})` }}
           ></div>
           <div className="header__dark">
             <Particles

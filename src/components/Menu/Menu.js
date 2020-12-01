@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "./SideDrawer.sass";
+import "./Menu.sass";
 
-const SideDrawer = (props) => {
+const Menu = (props) => {
   let menuClasses = "menu";
   let listItem = "menu__list-listItem";
   let list = "menu__list";
@@ -15,15 +15,34 @@ const SideDrawer = (props) => {
   }
 
   const navList = [
-    { name: "About", path: "/", exact: true, close: props.close },
-    { name: "Experience", path: "/experience", close: props.close },
-    { name: "Contact", path: "/contact", close: props.close },
+    {
+      name: "About",
+      path: "/",
+      exact: true,
+      close: props.close,
+      scroll: props.scroll,
+    },
+    {
+      name: "Experience",
+      path: "/experience",
+      close: props.close,
+      scroll: props.scroll,
+    },
+    {
+      name: "Contact",
+      path: "/contact",
+      close: props.close,
+      scroll: props.scroll,
+    },
   ];
   const links = navList.map((item) => (
     <li key={item.name} className={listItem}>
       <NavLink
         to={`${process.env.PUBLIC_URL}${item.path}`}
-        onClick={item.close}
+        onClick={function () {
+          item.close();
+          item.scroll();
+        }}
         exact={item.exact ? item.exact : false}
       >
         {item.name} <span></span>
@@ -56,4 +75,4 @@ const SideDrawer = (props) => {
   );
 };
 
-export default SideDrawer;
+export default Menu;

@@ -1,7 +1,7 @@
 import React from "react";
-import "./DrawerToggleButton.sass";
+import "./MenuButton.sass";
 
-const drawerToggleButton = (props) => {
+const MenuButton = (props) => {
   let lines = "toggle__button-line";
   let burger = "toggle__button";
 
@@ -19,4 +19,4 @@ const drawerToggleButton = (props) => {
   );
 };
 
-export default drawerToggleButton;
+export default MenuButton;

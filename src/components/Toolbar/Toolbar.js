@@ -1,10 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 
 import Logo from "../Logo/Logo";
-import DrawerToggleButton from "../SideDrawer/DrawerToggleButton";
+import MenuButton from "../MenuButton/MenuButton";
 import "./Toolbar.sass";
-import img from "../../images/pexels-andrea-piacquadio-774909.jpg";
 
 const navList = [
   { name: "About", path: "/", exact: true },
@@ -45,7 +44,7 @@ const Toolbar = (props) => {
         </div>
 
         <div className="toolbar__burger">
-          <DrawerToggleButton
+          <MenuButton
             open={props.open}
             click={props.drawerToggleHandler}
             color={props.color}

@@ -1,9 +1,10 @@
 import React from "react";
 
-import { HashRouter, Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import HomePage from "../../pages/HomePage";
 import ExperiencePage from "../../pages/ExperiencePage";
 import ContactPage from "../../pages/ContactPage";
+import ErrorPage from "../../pages/ErrorPage";
 
 const Page = () => {
   return (
@@ -18,6 +19,7 @@ const Page = () => {
           path={`${process.env.PUBLIC_URL}/contact`}
           component={ContactPage}
         />
+        <Route component={ErrorPage} />
       </Switch>
     </>
   );
