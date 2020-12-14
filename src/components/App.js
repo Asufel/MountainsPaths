@@ -14,8 +14,6 @@ class App extends Component {
   state = {
     menuOpen: false,
     arrowUp: false,
-    headerHeight: 0,
-    burgerColor: true,
   };
 
   drawerToggleClickHandler = () => {
@@ -51,7 +49,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div className="app" style={{ height: "100%" }}>
+        <div className="app">
           <Toolbar
             open={this.state.menuOpen}
             drawerToggleHandler={this.drawerToggleClickHandler}
