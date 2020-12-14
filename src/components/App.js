@@ -12,7 +12,7 @@ import ArrowUp from "./ArrowUp/ArrowUp";
 
 class App extends Component {
   state = {
-    sideDrawerOpen: false,
+    menuOpen: false,
     arrowUp: false,
     headerHeight: 0,
     burgerColor: true,
@@ -20,18 +20,18 @@ class App extends Component {
 
   drawerToggleClickHandler = () => {
     this.setState((prevState) => {
-      return { sideDrawerOpen: !prevState.sideDrawerOpen };
+      return { menuOpen: !prevState.menuOpen };
     });
   };
 
   closeNav = () => {
     setTimeout(() => {
-      this.setState({ sideDrawerOpen: false });
+      this.setState({ menuOpen: false });
     }, 500);
   };
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
-    if (this.state.sideDrawerOpen) {
+    if (this.state.menuOpen) {
       document.body.style.overflow = "hidden";
     }
   }
@@ -53,11 +53,11 @@ class App extends Component {
       <Router>
         <div className="app" style={{ height: "100%" }}>
           <Toolbar
-            open={this.state.sideDrawerOpen}
+            open={this.state.menuOpen}
             drawerToggleHandler={this.drawerToggleClickHandler}
           />
           <Menu
-            show={this.state.sideDrawerOpen}
+            show={this.state.menuOpen}
             scroll={this.scrollTo}
             close={this.closeNav}
           />

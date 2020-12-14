@@ -81,7 +81,7 @@ const Header = () => {
                     },
                   },
                   size: {
-                    value: 4,
+                    value: 2,
                     random: true,
                     anim: {
                       enable: false,
@@ -116,7 +116,7 @@ const Header = () => {
                   detect_on: "canvas",
                   events: {
                     onhover: {
-                      enable: true,
+                      enable: false,
                       mode: "bubble",
                     },
                     onclick: {

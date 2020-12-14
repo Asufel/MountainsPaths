@@ -2,7 +2,8 @@ import React from "react";
 import "./Footer.sass";
 import Logo from "../Logo/Logo";
 import Particles from "react-particles-js";
-import { animateScroll as scroll } from "react-scroll";
+// import { animateScroll as scroll } from "react-scroll";
+
 const Footer = (props) => {
   const footer_social_links = [
     {
@@ -35,14 +36,14 @@ const Footer = (props) => {
       </div>
       <ul className="footer__socials">{footer_link}</ul>
       <div className="footer__sign">
-        <p>Copyright &#169; 2020 Paweł Leszko</p>
+        <p>Copyright &#169; 2020 PL</p>
       </div>
       <div className="particle">
         <Particles
           params={{
             particles: {
               number: {
-                value: 80,
+                value: 40,
                 density: {
                   enable: true,
                   value_area: 800,
@@ -108,46 +109,6 @@ const Footer = (props) => {
                 },
               },
             },
-            interactivity: {
-              detect_on: "canvas",
-              events: {
-                onhover: {
-                  enable: true,
-                  mode: "bubble",
-                },
-                onclick: {
-                  enable: true,
-                  mode: "repulse",
-                },
-                resize: true,
-              },
-              modes: {
-                grab: {
-                  distance: 800,
-                  line_linked: {
-                    opacity: 1,
-                  },
-                },
-                bubble: {
-                  distance: 150,
-                  size: 7,
-                  duration: 2,
-                  opacity: 0.8,
-                  speed: 3,
-                },
-                repulse: {
-                  distance: 200,
-                  duration: 0.2,
-                },
-                push: {
-                  particles_nb: 4,
-                },
-                remove: {
-                  particles_nb: 2,
-                },
-              },
-            },
-            retina_detect: true,
           }}
         />
       </div>
